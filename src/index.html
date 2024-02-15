@@ -7,6 +7,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <link href="/src/style/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,30 +19,105 @@
     <div class="" style="  border-left: 2px solid black; height: 34px;"></div>
 
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/benefits.html"><img src="./assets/nav/benefits.png" width="75px"></a>
+      <a class="nav-link active" aria-current="page" href="/benefits.html"><img src="./assets/nav/benefits.png"
+          width="75px"></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/benefits.html"><img src="./assets/nav/jobs.png" width="75px"></a>
+      <a class="nav-link active" aria-current="page" href="/benefits.html"><img src="./assets/nav/jobs.png"
+          width="75px"></a>
     </li>
   </ul>
-  
+
   <!--https://www.color-hex.com/color-palette/4019-->
-  <div style="background: linear-gradient(90deg, #92ccdd 0%, #c7eff0 25%, #f5d5fd 50%, #fdc4ec 75%, #ffc2cb 100%); padding-top: 75px; padding-bottom: 75px;;">
+  <div
+  style="background: linear-gradient(90deg, #92ccdd  0%, #c7eff0  25%, #f5d5fd  50%, #fdc4ec  75%, #ffc2cb  100%); padding-top:  75px; padding-bottom:  75px; display: flex; justify-content: center; align-items: center; min-height:  100vh;">
   <form>
-      <h1 class="text-white" style="margin-left:  50px;">Find your next job at canvas.ai</h1>
-        <div class="row">
+    <h1 class="text-white">Find your next job at canvas.ai</h1>
+    <div class="row">
       <div class="col">
-          <input class="" style="padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text" class="form-control" id="" placeholder="Search by jobs by job title, ID, or keyword">
+        <input class="" style="padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text"
+          class="form-control" id="" placeholder="Search by jobs by job title, ID, or keyword">
       </div>
       <div class="col">
-          <input class="" style="padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text" class="form-control" id="" placeholder="Location">
+        <input class="" style="padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text"
+          class="form-control" id="" placeholder="Location">
       </div>
       <div class="col">
-          <button type="submit" style="padding: 25px;" class="btn btn-primary">Search</button>
+        <button type="submit" style="padding: 25px;" class="btn btn-primary">Search</button>
       </div>
     </div>
   </form>
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0   0   24   24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" style="position: absolute; bottom: 60px; left:   50%; transform: translateX(-50%); animation: pulse  2s infinite ease-in-out;">
+    <polyline points="6   9   12   15   18   9"></polyline>
+</svg>
 </div>
+  <div id="main_content" style="display: flex; justify-content: space-between;">
+    <div id="side_bar" style="margin-left:  15%; margin-top:  50px;">
+      Location:
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">All Locations</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Austin</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Chicago</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Dallas</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Los Angeles</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Philadelphia</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Remote</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Saint Louis</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">San Francisco</label>
+      </div>
+      <hr style="width: 300px;">
+      Experience:
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">All experience levels</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Internships</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Entry</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Mid</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Advanced</label>
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">Executive/Senior Management</label>
+      </div>
+      <hr style="width: 300px;">
+
+      Area of Work:
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckChecked">All</label>
+
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckDefault">Data</label>
+
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckDefault">Software</label>
+
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckDefault">Sales</label>
+
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckDefault">Accounting</label>
+
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckDefault">Advertising</label>
+
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-muted" for="flexSwitchCheckDefault">Human Resources</label>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
