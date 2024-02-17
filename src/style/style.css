@@ -44,3 +44,11 @@ input, select {
     margin-bottom: 10px;
     border: 1px solid #ddd;
 }
+
+.noneFound{
+  font-size: 72px;
+  background: -webkit-linear-gradient(#92ccdd, #ffc2cb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
