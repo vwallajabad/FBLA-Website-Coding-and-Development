@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <meta charset="utf-8">
+  <meta name="title" content="canvas.ai | Jobs">
+  <meta name="description" content="Job openings for canvas.ai">
+  <meta name="keywords" content="Software Developer, Data Analyst, Support Technician, Information Technology Manager, Cybersecurity Analyst, Chief Executive Officer, Janitor, Project Manager, Market Research Analyst">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="10 days">
+  
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -47,68 +55,68 @@
     <div id="side_bar" style="margin-top:  50px;" class="d-sm-none d-md-none d-lg-block">
       Location:
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="all_Locations" checked>
-        <label class="form-check-label text-muted" for="All Locations">All Locations</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="austin">
-        <label class="form-check-label text-muted" for="Austin">Austin</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="chicago">
-        <label class="form-check-label text-muted" for="Chicago">Chicago</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="dallas">
-        <label class="form-check-label text-muted" for="Dallas">Dallas</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="los_Angeles">
-        <label class="form-check-label text-muted" for="Los Angeles">Los Angeles</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="philadelphia">
-        <label class="form-check-label text-muted" for="Philadelphia">Philadelphia</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="remote">
-        <label class="form-check-label text-muted" for="Remote">Remote</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="saint_Louis">
-        <label class="form-check-label text-muted" for="Saint Louis">Saint Louis</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="san_Francisco">
-        <label class="form-check-label text-muted" for="San Francisco">San Francisco</label>
+        
+        <label class="form-check-label text-muted"><div id="label_AllLocations"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="all_Locations" checked>All Locations</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Austin"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="austin">Austin</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Chicago"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="chicago">Chicago</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Dallas"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="dallas">Dallas</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_LosAngeles"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="los_Angeles">Los Angeles</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Philadelphia"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="philadelphia">Philadelphia</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Remote"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="remote">Remote</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_SaintLouis"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="saint_Louis">Saint Louis</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_SanFrancisco"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="san_Francisco">San Francisco</div></label></input>
       </div>
       <hr style="width: 300px;">
       Experience:
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="all_experience_levels" checked>
-        <label class="form-check-label text-muted" for="All experience levels">All experience levels</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="internships">
-        <label class="form-check-label text-muted" for="Internships">Internships</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="entry">
-        <label class="form-check-label text-muted" for="Entry">Entry</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="mid">
-        <label class="form-check-label text-muted" for="Mid">Mid</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="advanced">
-        <label class="form-check-label text-muted" for="Advanced">Advanced</label>
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="executive_Senior_Management">
-        <label class="form-check-label text-muted" for="Executive/Senior Management">Executive/Senior Management</label>
+        
+        <label class="form-check-label text-muted"><div id="label_Allexperience"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="all_experience_levels" checked>All experience levels</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Internships"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="internships">Internships</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Entry"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="entry">Entry</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Mid"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="mid">Mid</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Advanced"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="advanced">Advanced</div></label></input>
+        
+        <label class="form-check-label text-muted"><div id="label_Executive_SeniorManagement"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="executive_Senior_Management">Executive/Senior Management</div></label></input>
       </div>
       <hr style="width: 300px;">
 
       Area of Work:
       <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="all" checked>
-        <label class="form-check-label text-muted" for="All">All</label>
+        
+        <label class="form-check-label text-muted"><div id="label_All"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="all" checked>All</div></label></input>
 
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="data">
-        <label class="form-check-label text-muted" for="Data">Data</label>
+        
+        <label class="form-check-label text-muted"><div id="label_Data"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="data">Data</div></label></input>
 
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="software">
-        <label class="form-check-label text-muted" for="Software">Software</label>
+        
+        <label class="form-check-label text-muted"><div id="label_Software"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="software">Software</div></label></input>
 
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="sales">
-        <label class="form-check-label text-muted" for="Sales">Sales</label>
+        
+        <label class="form-check-label text-muted"><div id="label_Sales"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="sales">Sales</div></label></input>
 
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="accounting">
-        <label class="form-check-label text-muted" for="Accounting">Accounting</label>
+        
+        <label class="form-check-label text-muted"><div id="label_Accounting"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="accounting">Accounting</div></label></input>
 
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="advertising">
-        <label class="form-check-label text-muted" for="Advertising">Advertising</label>
+        
+        <label class="form-check-label text-muted"><div id="label_Advertising"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="advertising">Advertising</div></label></input>
 
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="human_resources">
-        <label class="form-check-label text-muted" for="Human Resources">Human Resources</label>
+        
+        <label class="form-check-label text-muted"><div id="label_HumanResources"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="human_resources">Human Resources</div></label></input>
 
-        <input class="form-check-input" type="checkbox" onclick="search_filter()" id="other">
-        <label class="form-check-label text-muted" for="Other">Other</label>
+        
+        <label class="form-check-label text-muted"><div id="label_Other"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="other">Other</div></label></input>
       </div>
     </div>
     <div class="row">
