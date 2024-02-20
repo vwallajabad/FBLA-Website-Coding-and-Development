@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="title" content="canvas.ai | Jobs">
-  <meta name="description" content="Job openings for canvas.ai">
-  <meta name="keywords" content="Software Developer, Data Analyst, Support Technician, Information Technology Manager, Cybersecurity Analyst, Chief Executive Officer, Janitor, Project Manager, Market Research Analyst">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="English">
-  <meta name="revisit-after" content="10 days">
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="canvas.ai | Jobs">
+<meta name="description" content="Job openings for canvas.ai">
+<meta name="keywords"
+  content="Software Developer, Data Analyst, Support Technician, Information Technology Manager, Cybersecurity Analyst, Chief Executive Officer, Janitor, Project Manager, Market Research Analyst">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="10 days">
+
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link href="/style/style.css" rel="stylesheet">
   <script src="/script/search.js"></script>
   <title>canvas.ai | Jobs</title>
@@ -23,7 +29,8 @@
 
   <ul class="nav d-flex align-items-center" style="margin-left: 50px;">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#"><img src="./assets/nav/nav.png" width="75px" alt="Home"></a>
+      <a class="nav-link active" aria-current="page" href="#"><img src="./assets/nav/nav.png" width="75px"
+          alt="Home"></a>
     </li>
     <div style="border-left: 2px solid black; height: 34px;"></div>
 
@@ -32,8 +39,8 @@
           width="75px" alt="Benefits"></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/jobs.html"><img src="./assets/nav/jobs.png"
-          width="75px" alt="Jobs"></a>
+      <a class="nav-link active" aria-current="page" href="/jobs.html"><img src="./assets/nav/jobs.png" width="75px"
+          alt="Jobs"></a>
     </li>
   </ul>
 
@@ -44,80 +51,154 @@
       <h1 class="text-white text-center">Find your next job at canvas.ai</h1>
       <div class="row">
         <div class="col">
-          <input class="form-control" style="min-width: 400px; padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text" placeholder="Search by jobs by job title or keywords" id="search_bar_id" oninput="search_bar('search_bar_id')">
+          <input class="form-control"
+            style="min-width: 400px; padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text"
+            placeholder="Search by jobs by job title or keywords" id="search_bar_id"
+            oninput="search_bar('search_bar_id')">
         </div>
         <div class="col">
-          <input class="form-control" style="padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text" placeholder="Location" id="location_input" oninput="search_bar('location_input')">
+          <input class="form-control" style="padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text"
+            placeholder="Location" id="location_input" oninput="search_bar('location_input')">
         </div>
       </div>
     </form>
   </div>
-  <div id="main_content" style="display: flex; flex-wrap: wrap; justify-content: center;" class="justify-content-center fixed">
+  <div id="main_content" style="display: flex; flex-wrap: wrap; justify-content: center;"
+    class="justify-content-center fixed">
     <div id="side_bar" style="margin-top:  50px;" class="d-sm-none d-md-none d-lg-block">
       Location:
       <div class="form-check form-switch">
-        
-        <label class="form-check-label text-muted"><div id="label_AllLocations"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="all_Locations" checked>All Locations</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Austin"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="austin">Austin</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Chicago"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="chicago">Chicago</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Dallas"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="dallas">Dallas</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_LosAngeles"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="los_Angeles">Los Angeles</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Philadelphia"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="philadelphia">Philadelphia</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Remote"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="remote">Remote</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_SaintLouis"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="saint_Louis">Saint Louis</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_SanFrancisco"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="san_Francisco">San Francisco</div></label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_AllLocations"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="all_Locations" checked>All Locations</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Austin"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="austin">Austin</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Chicago"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="chicago">Chicago</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Dallas"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="dallas">Dallas</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_LosAngeles"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="los_Angeles">Los Angeles</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Philadelphia"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="philadelphia">Philadelphia</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Remote"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="remote">Remote</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_SaintLouis"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="saint_Louis">Saint Louis</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_SanFrancisco"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="san_Francisco">San Francisco</div>
+        </label></input>
       </div>
       <hr style="width: 300px;">
       Experience:
       <div class="form-check form-switch">
-        
-        <label class="form-check-label text-muted"><div id="label_Allexperience"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="all_experience_levels" checked>All experience levels</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Internships"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="internships">Internships</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Entry"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="entry">Entry</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Mid"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="mid">Mid</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Advanced"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="advanced">Advanced</div></label></input>
-        
-        <label class="form-check-label text-muted"><div id="label_Executive_SeniorManagement"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="executive_Senior_Management">Executive/Senior Management</div></label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Allexperience"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="all_experience_levels" checked>All experience levels</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Internships"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="internships">Internships</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Entry"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="entry">Entry</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Mid"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="mid">Mid
+          </div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Advanced"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="advanced">Advanced</div>
+        </label></input>
+
+        <label class="form-check-label text-muted">
+          <div id="label_Executive_SeniorManagement"><input class="form-check-input" type="checkbox"
+              onclick="search_filter()" id="executive_Senior_Management">Executive/Senior Management</div>
+        </label></input>
       </div>
       <hr style="width: 300px;">
 
       Area of Work:
       <div class="form-check form-switch">
-        
-        <label class="form-check-label text-muted"><div id="label_All"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="all" checked>All</div></label></input>
 
-        
-        <label class="form-check-label text-muted"><div id="label_Data"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="data">Data</div></label></input>
+        <label class="form-check-label text-muted">
+          <div id="label_All"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="all"
+              checked>All</div>
+        </label></input>
 
-        
-        <label class="form-check-label text-muted"><div id="label_Software"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="software">Software</div></label></input>
 
-        
-        <label class="form-check-label text-muted"><div id="label_Sales"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="sales">Sales</div></label></input>
+        <label class="form-check-label text-muted">
+          <div id="label_Data"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="data">Data
+          </div>
+        </label></input>
 
-        
-        <label class="form-check-label text-muted"><div id="label_Accounting"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="accounting">Accounting</div></label></input>
 
-        
-        <label class="form-check-label text-muted"><div id="label_Advertising"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="advertising">Advertising</div></label></input>
+        <label class="form-check-label text-muted">
+          <div id="label_Software"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="software">Software</div>
+        </label></input>
 
-        
-        <label class="form-check-label text-muted"><div id="label_HumanResources"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="human_resources">Human Resources</div></label></input>
 
-        
-        <label class="form-check-label text-muted"><div id="label_Other"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="other">Other</div></label></input>
+        <label class="form-check-label text-muted">
+          <div id="label_Sales"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="sales">Sales</div>
+        </label></input>
+
+
+        <label class="form-check-label text-muted">
+          <div id="label_Accounting"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="accounting">Accounting</div>
+        </label></input>
+
+
+        <label class="form-check-label text-muted">
+          <div id="label_Advertising"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="advertising">Advertising</div>
+        </label></input>
+
+
+        <label class="form-check-label text-muted">
+          <div id="label_HumanResources"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="human_resources">Human Resources</div>
+        </label></input>
+
+
+        <label class="form-check-label text-muted">
+          <div id="label_Other"><input class="form-check-input" type="checkbox" onclick="search_filter()"
+              id="other">Other</div>
+        </label></input>
       </div>
     </div>
     <div class="row">
@@ -125,8 +206,25 @@
         <div class="Software Developer New York card job_card">
           <div class="card-body">
             <h5 class="card-title">Software Developer</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non enim praesent elementum facilisis leo.</p><br>
-              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"></path> <path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z"></path> </g> </g></svg>New York</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non
+              enim praesent elementum facilisis leo.</p><br>
+            <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
+                xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z">
+                    </path>
+                    <path
+                      d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z">
+                    </path>
+                  </g>
+                </g>
+              </svg>New York</p>
             <a href="#" class="btn btn-primary">Apply Now!</a>
           </div>
         </div>
@@ -136,8 +234,25 @@
 
             <div class="card-body">
               <h5 class="card-title">Data Analyst</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non enim praesent elementum facilisis leo.</p><br>
-              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"></path> <path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z"></path> </g> </g></svg>Austin</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non
+                enim praesent elementum facilisis leo.</p><br>
+              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
+                  xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z">
+                      </path>
+                      <path
+                        d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>Austin</p>
               <a href="#" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -147,8 +262,25 @@
           <div class="Support Technician Chicago card job_card">
             <div class="card-body">
               <h5 class="card-title">Support Technician</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non enim praesent elementum facilisis leo.</p><br>
-              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"></path> <path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z"></path> </g> </g></svg>Chicago</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non
+                enim praesent elementum facilisis leo.</p><br>
+              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
+                  xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z">
+                      </path>
+                      <path
+                        d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>Chicago</p>
               <a href="#" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -158,8 +290,25 @@
           <div class="Information Technology Manager Dallas card job_card">
             <div class="card-body">
               <h5 class="card-title">Information Technology Manager</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non enim praesent elementum facilisis leo.</p><br>
-              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"></path> <path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z"></path> </g> </g></svg>Dallas</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non
+                enim praesent elementum facilisis leo.</p><br>
+              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
+                  xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z">
+                      </path>
+                      <path
+                        d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>Dallas</p>
               <a href="#" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -169,8 +318,25 @@
           <div class="Cybersecurity Analyst Remote card job_card">
             <div class="card-body">
               <h5 class="card-title">Cybersecurity Analyst</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non enim praesent elementum facilisis leo.</p><br>
-              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"></path> <path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z"></path> </g> </g></svg>Remote</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non
+                enim praesent elementum facilisis leo.</p><br>
+              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
+                  xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z">
+                      </path>
+                      <path
+                        d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>Remote</p>
               <a href="#" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -180,8 +346,25 @@
           <div class="Chief Executive Officer CEO Philadelphia card job_card">
             <div class="card-body">
               <h5 class="card-title">Chief Executive Officer</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non enim praesent elementum facilisis leo.</p><br>
-              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"></path> <path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z"></path> </g> </g></svg>Philadelphia</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non
+                enim praesent elementum facilisis leo.</p><br>
+              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
+                  xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z">
+                      </path>
+                      <path
+                        d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>Philadelphia</p>
               <a href="#" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -191,8 +374,25 @@
           <div class="Janitor Los Angeles card job_card">
             <div class="card-body">
               <h5 class="card-title">Janitor</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non enim praesent elementum facilisis leo.</p><br>
-              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"></path> <path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z"></path> </g> </g></svg>Los Angeles</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non
+                enim praesent elementum facilisis leo.</p><br>
+              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
+                  xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z">
+                      </path>
+                      <path
+                        d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>Los Angeles</p>
               <a href="#" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -202,8 +402,25 @@
           <div class="Project Manager Saint Louis card job_card">
             <div class="card-body">
               <h5 class="card-title">Project Manager</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non enim praesent elementum facilisis leo.</p><br>
-              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"></path> <path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z"></path> </g> </g></svg>Saint Louis</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non
+                enim praesent elementum facilisis leo.</p><br>
+              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
+                  xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z">
+                      </path>
+                      <path
+                        d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>Saint Louis</p>
               <a href="#" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -213,15 +430,32 @@
           <div class="Market Research Analyst San Francisco card job_card">
             <div class="card-body">
               <h5 class="card-title">Market Research Analyst</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non enim praesent elementum facilisis leo.</p><br>
-              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z"></path> <path d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z"></path> </g> </g></svg>San Francisco</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed. Rhoncus dolor purus non
+                enim praesent elementum facilisis leo.</p><br>
+              <p class="card-text"><svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
+                  xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M148.5,0C87.43,0,37.747,49.703,37.747,110.797c0,91.026,99.729,179.905,103.976,183.645 c1.936,1.705,4.356,2.559,6.777,2.559c2.421,0,4.841-0.853,6.778-2.559c4.245-3.739,103.975-92.618,103.975-183.645 C259.253,49.703,209.57,0,148.5,0z M148.5,272.689c-22.049-21.366-90.243-93.029-90.243-161.892 c0-49.784,40.483-90.287,90.243-90.287s90.243,40.503,90.243,90.287C238.743,179.659,170.549,251.322,148.5,272.689z">
+                      </path>
+                      <path
+                        d="M148.5,59.183c-28.273,0-51.274,23.154-51.274,51.614c0,28.461,23.001,51.614,51.274,51.614 c28.273,0,51.274-23.153,51.274-51.614C199.774,82.337,176.773,59.183,148.5,59.183z M148.5,141.901 c-16.964,0-30.765-13.953-30.765-31.104c0-17.15,13.801-31.104,30.765-31.104c16.964,0,30.765,13.953,30.765,31.104 C179.265,127.948,165.464,141.901,148.5,141.901z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>San Francisco</p>
               <a href="#" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
         </div>
         <br>
       </div>
-    </div>  
+    </div>
 </body>
 
 </html>
