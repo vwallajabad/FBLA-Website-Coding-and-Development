@@ -57,18 +57,14 @@ function search_filter() {
 
     jobCard.style.display = isRelevant ? "block" : "none";
   });
+
   let foundJobs = false;
   jobCards.forEach((jobCard) => {
-    const jobCardText = jobCard.textContent.toLowerCase();
-    let isRelevant = true;
-  
-    if (selectedFilters.length >  0) {
-      isRelevant = selectedFilters.every((filter) => jobCardText.includes(filter));
+    if (jobCard.style.display !== 'none') {
+      foundJobs = true;
     }
-  
-    jobCard.style.display = isRelevant ? "block" : "none";
   });
-  
+
   if (!foundJobs) {
     const mainContent = document.getElementById('main_content');
     const existingNoJobsFound = document.getElementById('no_jobs_found');
