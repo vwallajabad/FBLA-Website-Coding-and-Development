@@ -1,3 +1,8 @@
+names = ["Software-Developer", "Data-Analyst", "Support-Technician", "Information-Technology-Manager", "Cybersecurity-Analyst", "Chief-Executive-Officer", "Janitor", "Project-Manager", "Market-Research-Analyst"]
+
+for i in names:
+    file = open("forms/"+i+".html", "w")
+    file.write("""
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,8 +37,7 @@
     <li class="nav-item" style="margin-left: 50px;">
       <a class="nav-link active" aria-current="page" href="#"><img src="/assets/nav/nav.png" width="75px"
           alt="Home"></a>
-    </li>
-    <div style="border-left: 2px solid black; height: 34px;"></div>
+    </li>    <div style="border-left: 2px solid black; height: 34px;"></div>
 
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="/benefits.html"><img src="/assets/nav/benefits.png"
@@ -112,3 +116,4 @@
   </script>
 
        </div></html>
+""")
