@@ -7,8 +7,7 @@ $(window).on('resize', function() {
         alert('window is smaller than 500px');
        $('.col').removeClass('col');
     } else {
-       // If you want to add the class back when the window is resized to be larger than 500px
-       // $('.col').addClass('col');
     }
-   }).trigger('resize'); // Trigger the resize event on page load
+   }).trigger('resize');
    
+   console.log($(window).width());
