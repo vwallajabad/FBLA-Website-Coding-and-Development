@@ -20,8 +20,8 @@
 }
 
 .job_card {
-  max-height: 250px;
-  min-width: 300px;
+/*  max-height: 250px;  */
+  min-width: 100px;
   max-width: 600px;
 }
 
