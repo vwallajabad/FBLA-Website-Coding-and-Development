@@ -20,11 +20,17 @@
 }
 
 .job_card {
-/*  max-height: 250px;  */
-  min-width: 100px;
+  max-height: 250px;
+  min-width: 300px;
   max-width: 600px;
 }
 
+@media (max-width: 500px) {
+  .row{
+      margin-left: 0px !important;
+  }
+}
+ 
 #arrow {
   position: fixed;
   bottom: 0;
