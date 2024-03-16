@@ -54,8 +54,8 @@ function search_filter() {
     if (selectedFilters.length > 0) {
       isRelevant = selectedFilters.some((filter) => jobCardText.includes(filter));
     }
-
     jobCard.style.display = isRelevant ? "block" : "none";
+
   });
 
   let foundJobs = false;

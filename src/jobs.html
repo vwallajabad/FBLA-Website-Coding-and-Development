@@ -23,9 +23,14 @@
   <link href="/style/style.css" rel="stylesheet">
   <script src="/script/search.js"></script>
   <title>canvas.ai | Jobs</title>
+  <style>
+    .job_card{
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 
-<body>
+<body style="background-color: #fff3d8cc;">
 
   <ul class="nav d-flex align-items-center" style="margin-left: 50px;">
     <li class="nav-item">
@@ -46,18 +51,18 @@
 
   <!--https://www.color-hex.com/color-palette/4019-->
   <div
-    style="background: linear-gradient(90deg, #92ccdd  0%, #c7eff0  25%, #f5d5fd  50%, #fdc4ec  75%, #ffc2cb  100%); padding-top:  75px; padding-bottom:  75px; display: flex; justify-content: center; align-items: center; min-height:  300px;">
+    style="background: linear-gradient(0deg, #0C2E0F  0%, #124C17  25%, #17671D  50%, #328A3B  75%, #48AE4F  100%); padding-top:  75px; padding-bottom:  75px; display: flex; justify-content: center; align-items: center; min-height:  300px;">
     <form>
       <h1 class="text-white text-center">Find your next job at canvas.ai</h1>
       <div class="row">
         <div class="col">
           <input class="form-control"
-            style="min-width: 400px; padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text"
+            style="min-width: 400px; padding: 25px; border:2px solid #7CE689; border-radius:50px;" type="text"
             placeholder="Search by jobs by job title or keywords" id="search_bar_id"
             oninput="search_bar('search_bar_id')">
         </div>
         <div class="col">
-          <input class="form-control" style="padding: 25px; border:2px solid #0d6efd; border-radius:50px;" type="text"
+          <input class="form-control" style="padding: 25px; border:2px solid #7CE689; border-radius:50px;" type="text"
             placeholder="Location" id="location_input" oninput="search_bar('location_input')">
         </div>
       </div>
@@ -65,145 +70,145 @@
   </div>
   <div id="main_content" style="display: flex; flex-wrap: wrap; justify-content: center;"
     class="justify-content-center fixed">
-    <div id="side_bar" style="margin-top:  50px;" class="d-sm-none d-md-none d-lg-block">
-      Location:
+    <div id="side_bar" style="margin-top:  50px;" class="d-none d-lg-block">
+      <strong>Location:</strong>
       <div class="form-check form-switch">
 
         <label class="form-check-label text-muted">
           <div id="label_AllLocations"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="all_Locations" checked>All Locations</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="all_Locations" checked>All Locations</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Austin"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="austin">Austin</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="austin">Austin</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Chicago"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="chicago">Chicago</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="chicago">Chicago</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Dallas"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="dallas">Dallas</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="dallas">Dallas</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_LosAngeles"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="los_Angeles">Los Angeles</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="los_Angeles">Los Angeles</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Philadelphia"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="philadelphia">Philadelphia</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="philadelphia">Philadelphia</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Remote"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="remote">Remote</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="remote">Remote</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_SaintLouis"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="saint_Louis">Saint Louis</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="saint_Louis">Saint Louis</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_SanFrancisco"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="san_Francisco">San Francisco</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="san_Francisco">San Francisco</div>
         </label></input>
       </div>
       <hr style="width: 300px;">
-      Experience:
+      <strong>Experience:</strong>
       <div class="form-check form-switch">
 
         <label class="form-check-label text-muted">
           <div id="label_Allexperience"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="all_experience_levels" checked>All experience levels</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="all_experience_levels" checked>All experience levels</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Internships"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="internships">Internships</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="internships">Internships</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Entry"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="entry">Entry</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="entry">Entry</div>
         </label></input>
 
         <label class="form-check-label text-muted">
-          <div id="label_Mid"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="mid">Mid
+          <div id="label_Mid"><input class="form-check-input" type="checkbox" onclick="search_filter()" style="background-color: #7CE689; border-color: #7CE689;"id="mid">Mid
           </div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Advanced"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="advanced">Advanced</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="advanced">Advanced</div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Executive_SeniorManagement"><input class="form-check-input" type="checkbox"
-              onclick="search_filter()" id="executive_Senior_Management">Executive/Senior Management</div>
+              onclick="search_filter()" id="executive_Senior_Management" style="background-color: #7CE689; border-color: #7CE689;">Executive/Senior Management</div>
         </label></input>
       </div>
       <hr style="width: 300px;">
 
-      Area of Work:
+      <strong>Area of Work:</strong>
       <div class="form-check form-switch">
 
         <label class="form-check-label text-muted">
-          <div id="label_All"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="all"
+          <div id="label_All"><input class="form-check-input" type="checkbox" onclick="search_filter()" style="background-color: #7CE689; border-color: #7CE689;"id="all"
               checked>All</div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
-          <div id="label_Data"><input class="form-check-input" type="checkbox" onclick="search_filter()" id="data">Data
+          <div id="label_Data"><input class="form-check-input" type="checkbox" onclick="search_filter()" style="background-color: #7CE689; border-color: #7CE689;"id="data">Data
           </div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Software"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="software">Software</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="software">Software</div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Sales"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="sales">Sales</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="sales">Sales</div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Accounting"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="accounting">Accounting</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="accounting">Accounting</div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Advertising"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="advertising">Advertising</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="advertising">Advertising</div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_HumanResources"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="human_resources">Human Resources</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="human_resources">Human Resources</div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Other"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              id="other">Other</div>
+              style="background-color: #7CE689; border-color: #7CE689;"id="other">Other</div>
         </label></input>
       </div>
     </div>
     <div class="row">
       <div class="col-12" style="margin-top: 50px; margin-left: 20px;">
-        <div class="Software Developer New York card job_card">
+        <div class="Software Developer New York card job_card" style="border-color: #0C2E0F; border-width: 2px;">
           <div class="card-body">
             <h5 class="card-title">Software Developer</h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -225,12 +230,11 @@
                   </g>
                 </g>
               </svg>New York</p>
-            <a href="/forms/Software-Developer.html" class="btn btn-primary">Apply Now!</a>
+            <a href="/forms/Software-Developer.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107);" class="btn btn-primary">Apply Now!</a>
           </div>
         </div>
-        <br>
         <div class="col-12">
-          <div class="Data Analyst Austin card job_card">
+          <div class="Data Analyst Austin card job_card" style="border-color: #0C2E0F; border-width: 2px;">
 
             <div class="card-body">
               <h5 class="card-title">Data Analyst</h5>
@@ -253,13 +257,12 @@
                     </g>
                   </g>
                 </svg>Austin</p>
-              <a href="/forms/Data-Analyst.html" class="btn btn-primary">Apply Now!</a>
+              <a href="/forms/Data-Analyst.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
         </div>
-        <br>
         <div class="col-12">
-          <div class="Support Technician Chicago card job_card">
+          <div class="Support Technician Chicago card job_card" style="border-color: #0C2E0F; border-width: 2px;">
             <div class="card-body">
               <h5 class="card-title">Support Technician</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -281,13 +284,12 @@
                     </g>
                   </g>
                 </svg>Chicago</p>
-              <a href="/forms/Support-Technician.html" class="btn btn-primary">Apply Now!</a>
+              <a href="/forms/Support-Technician.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
         </div>
-        <br>
         <div class="col-12">
-          <div class="Information Technology Manager Dallas card job_card">
+          <div class="Information Technology Manager Dallas card job_card" style="border-color: #0C2E0F; border-width: 2px;">
             <div class="card-body">
               <h5 class="card-title">Information Technology Manager</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -309,13 +311,12 @@
                     </g>
                   </g>
                 </svg>Dallas</p>
-              <a href="/forms/Information-Technology-Manager.html" class="btn btn-primary">Apply Now!</a>
+              <a href="/forms/Information-Technology-Manager.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
         </div>
-        <br>
         <div class="col-12">
-          <div class="Cybersecurity Analyst Remote card job_card">
+          <div class="Cybersecurity Analyst Remote card job_card" style="border-color: #0C2E0F; border-width: 2px;">
             <div class="card-body">
               <h5 class="card-title">Cybersecurity Analyst</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -337,13 +338,12 @@
                     </g>
                   </g>
                 </svg>Remote</p>
-              <a href="/forms/Cybersecurity-Analyst.html" class="btn btn-primary">Apply Now!</a>
+              <a href="/forms/Cybersecurity-Analyst.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
         </div>
-        <br>
         <div class="col-12">
-          <div class="Chief Executive Officer CEO Philadelphia card job_card">
+          <div class="Chief Executive Officer CEO Philadelphia card job_card" style="border-color: #0C2E0F; border-width: 2px;">
             <div class="card-body">
               <h5 class="card-title">Chief Executive Officer</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -365,13 +365,12 @@
                     </g>
                   </g>
                 </svg>Philadelphia</p>
-              <a href="/forms/Chief-Executive-Officer.html" class="btn btn-primary">Apply Now!</a>
+              <a href="/forms/Chief-Executive-Officer.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
         </div>
-        <br>
         <div class="col-12">
-          <div class="Janitor Los Angeles card job_card">
+          <div class="Janitor Los Angeles card job_card" style="border-color: #0C2E0F; border-width: 2px;">
             <div class="card-body">
               <h5 class="card-title">Janitor</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -393,13 +392,12 @@
                     </g>
                   </g>
                 </svg>Los Angeles</p>
-              <a href="/forms/Janitor.html" class="btn btn-primary">Apply Now!</a>
+              <a href="/forms/Janitor.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
         </div>
-        <br>
         <div class="col-12">
-          <div class="Project Manager Saint Louis card job_card">
+          <div class="Project Manager Saint Louis card job_card" style="border-color: #0C2E0F; border-width: 2px;">
             <div class="card-body">
               <h5 class="card-title">Project Manager</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -421,13 +419,12 @@
                     </g>
                   </g>
                 </svg>Saint Louis</p>
-              <a href="/forms/Project-Manager.html" class="btn btn-primary">Apply Now!</a>
+              <a href="/forms/Project-Manager.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
         </div>
-        <br>
         <div class="col-12">
-          <div class="Market Research Analyst San Francisco card job_card">
+          <div class="Market Research Analyst San Francisco card job_card" style="border-color: #0C2E0F; border-width: 2px;">
             <div class="card-body">
               <h5 class="card-title">Market Research Analyst</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -449,11 +446,10 @@
                     </g>
                   </g>
                 </svg>San Francisco</p>
-              <a href="/forms/Market-Research-Analyst.html" class="btn btn-primary">Apply Now!</a>
+              <a href="/forms/Market-Research-Analyst.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)" class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
         </div>
-        <br>
       </div>
     </div>
 </body>
