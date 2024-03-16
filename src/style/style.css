@@ -25,12 +25,16 @@
   max-width: 600px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .row{
-      margin-left: 0px !important;
+    margin-left: 0px !important;
   }
+  #cardCol{
+    margin-left: 0px !important;
+  }
+
 }
- 
+
 #arrow {
   position: fixed;
   bottom: 0;
