@@ -17,7 +17,7 @@ for i in names:
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
  <link href="/style/style.css" rel="stylesheet">
- <title>canvas.ai | """ + i.replace('-', ' ') + """</title>
+ <title>AgriAI | """ + i.replace('-', ' ') + """</title>
 <style>
       .nav {
         background-color: white;
