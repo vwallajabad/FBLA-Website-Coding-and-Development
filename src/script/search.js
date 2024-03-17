@@ -1,45 +1,46 @@
 function search_bar(id) {
   const inputElement = document.getElementById(id);
   const jobCards = document.querySelectorAll(".job_card");
-
+  const mainContent = document.getElementById('main_content');
+  const existingNoJobsFound = document.getElementById('no_jobs_found');
+ 
   inputElement.addEventListener("input", () => {
-    const searchTerm = inputElement.value.toLowerCase();
-    let jobsFound = false;
-
-    jobCards.forEach((jobCard) => {
-      const jobCardText = jobCard.textContent.toLowerCase();
-
-      if (jobCardText.includes(searchTerm)) {
-        jobCard.style.display = "block";
-        jobsFound = true;
-      } else {
-        jobCard.style.display = "none";
-      }
-    });
-
-    if (!jobsFound) {
-      const mainContent = document.getElementById('main_content');
-      const existingNoJobsFound = document.getElementById('no_jobs_found');
+     const searchTerm = inputElement.value.toLowerCase();
+     let jobsFound = false;
+ 
+     jobCards.forEach((jobCard) => {
+       const jobCardText = jobCard.textContent.toLowerCase();
+ 
+       if (jobCardText.includes(searchTerm)) {
+         jobCard.style.display = "block";
+         jobsFound = true;
+       } else {
+         jobCard.style.display = "none";
+       }
+     });
+ 
+     if (!jobsFound) {
+      let existingNoJobsFound = document.getElementById('no_jobs_found');
       if (!existingNoJobsFound) {
         const noJobsFound = document.createElement('h1');
         noJobsFound.textContent = 'No jobs found matching your criteria';
         noJobsFound.id = 'no_jobs_found';
         noJobsFound.style.display = 'block';
         noJobsFound.style.textAlign = 'center';
+        noJobsFound.style.maxWidth = '600px';
         noJobsFound.style.paddingTop = '5%';
         mainContent.appendChild(noJobsFound);
       } else {
         existingNoJobsFound.style.display = 'block';
       }
-    } else {
-      const existingNoJobsFound = document.getElementById('no_jobs_found');
+   } else {
+      let existingNoJobsFound = document.getElementById('no_jobs_found');
       if (existingNoJobsFound) {
         existingNoJobsFound.style.display = 'none';
       }
-    }
-  
-  });
-}
+   }
+    });
+ }
 
 
 function search_filter() {
@@ -94,13 +95,13 @@ function search_filter() {
       noJobsFound.textContent = 'No jobs found matching your criteria';
       noJobsFound.id = 'no_jobs_found';
       noJobsFound.style.display = 'block';
-      noJobsFound.style.width = '600px';
       noJobsFound.style.textAlign = 'center';
+      noJobsFound.style.maxWidth = '600px';
       noJobsFound.style.paddingTop = '5%';
       mainContent.appendChild(noJobsFound);
     } else {
+      noJobsFound.style.maxWidth = '600px';
       existingNoJobsFound.style.display = 'block';
-      existingNoJobsFound.style.width = '600px';
     }
   } else {
     const existingNoJobsFound = document.getElementById('no_jobs_found');
