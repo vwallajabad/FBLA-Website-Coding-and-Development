@@ -63,6 +63,7 @@ body {
      flex-direction: column;
      align-items: center;
      margin-top: 0px;
+     margin-top: 20px;
   }
   .left{
     background-color: white;
@@ -71,10 +72,11 @@ body {
     height: 150px;
   }
   .right {
-    top: 50px;
+    position: fixed;
      width: 100%;
      padding: 0 20px;
-
+     top: 200px;
+     height: auto;
   }
   h1 {
      text-align: center;
