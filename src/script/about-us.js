@@ -1,3 +1,4 @@
+document.getElementById("destroy").remove();
 var additionalText = [
   "At AgriAI, we're pioneering the future of agriculture through cutting-edge research and innovative AI solutions. ",
 
@@ -12,6 +13,15 @@ var additionalText = [
 
 var lastScrollTop = 0;
 var textIndexCounter = 0;
+
+if (window.innerWidth < 768) {
+  var rightDiv = document.querySelector('.right');
+
+  for(i = 0; i<additionalText.length; i++){
+    rightDiv.insertAdjacentHTML('beforeend', additionalText[textIndexCounter]);
+    textIndexCounter++;
+  }
+}
 
 function addTextOnScroll(event) {
 var rightDiv = document.querySelector('.right');
