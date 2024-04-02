@@ -73,3 +73,7 @@ select {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.job_card {
+  margin-bottom: 10px;
+}
