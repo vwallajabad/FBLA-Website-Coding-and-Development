@@ -64,3 +64,90 @@ select {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+
+
+
+.background-div {
+  display: flex;
+  justify-content: center;
+  height: 50em;
+  background-image: url("/assets/benefits/benefit-1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transform-origin: bottom;
+}
+
+.header-text {
+  align-items: center;
+  color: white;
+  font-size: 140px;
+  position: relative;
+  padding-top: 25%;
+}
+
+@keyframes header-image-animation {
+  25% {opacity: 1;}
+  85%, 100% {opacity: 0; scale: 3}
+}
+
+/* Apply animation only on screens wider than 768px */
+@media only screen and (min-width: 769px) {
+  .background-div {
+    animation: header-image-animation linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
+  }
+
+  .header-text {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -200px;
+  }
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 768px) {
+  .background-div {
+    background-image: url("/assets/benefits/benefit-1.jpg"); /* Ensure background image is shown on mobile */
+    animation: none; /* Disable animation on mobile */
+  }
+
+  .header-text {
+    opacity: 1; /* Ensure header text is visible on mobile */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.slide1 {
+  width: 100px;
+  height:200px;
+  background-color: blue;
+  animation: slideAnimation 2s infinite alternate;
+
+}
+@keyframes slideAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100px); } /* Adjust as needed */
+}
+
+.container{
+  justify-content: center;
+}
+
+/*the values grid*/
+
+.values {
+  padding: 80px 0; 
+}
