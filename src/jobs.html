@@ -2,8 +2,8 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="title" content="AgriAI | Jobs">
-<meta name="description" content="Job openings for AgriAI">
+<meta name="title" content="QuantumSphere | Jobs">
+<meta name="description" content="Job openings for QuantumSphere">
 <meta name="keywords"
   content="Software Developer, Data Analyst, Support Technician, Information Technology Manager, Cybersecurity Analyst, Chief Executive Officer, Janitor, Project Manager, Market Research Analyst">
 <meta name="robots" content="index, follow">
@@ -25,43 +25,37 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link href="/style/style.css" rel="stylesheet">
   <script src="/script/search.js"></script>
-  <title>AgriAI | Jobs</title>
+  <title>QuantumSphere | Jobs</title>
   <style>
   </style>
 </head>
 
-<body style="background-color: #fff3d8cc;">
+<body style="background-color: #0b0c10;">
 
-  <ul class="nav d-flex align-items-center" style="margin-left: 50px;">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#"><img src="./assets/nav/nav.png" width="75px"
-          alt="Home"></a>
-    </li>
-    <div style="border-left: 2px solid black; height: 34px;"></div>
-
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/benefits.html"><img src="./assets/nav/benefits.png"
-          width="75px" alt="Benefits"></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/jobs.html"><img src="./assets/nav/jobs.png" width="75px"
-          alt="Jobs"></a>
-    </li>
-  </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+    <a class="navbar-brand" href=“/“>QuantumSphere</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/about-us.html">About Us</a>
+        <a class="nav-item nav-link" href="/benefits.html">Benefits</a>
+        <a class="nav-item nav-link" href="/jobs.html">Jobs</a>
+      </div>
+    </div>
+  </nav>
 
   
   <div
-    style="background: linear-gradient(0deg, #0C2E0F  0%, #124C17  25%, #17671D  50%, #328A3B  75%, #48AE4F  100%); padding-top:  75px; padding-bottom:  75px; display: flex; justify-content: center; align-items: center; min-height:  300px;">
+    style="background: linear-gradient(0deg, rgb(11,12,16)  0%, white  100%); padding-top:  75px; padding-bottom:  75px; display: flex; justify-content: center; align-items: center; min-height:  300px;">
     <form>
-      <h1 class="text-white text-center">Find your next job at AgriAI</h1>
+      <h1 class="text-white text-center">Find your next job at QuantumSphere</h1>
       <div class="row" style="max-width: 100%;">
         <div class="col">
-          <input class="form-control" style="padding: 25px; border:2px solid #7CE689; border-radius:50px;" type="text"
+          <input class="form-control" style="padding: 25px; border-radius:50px; margin-top: 25px;" type="text"
             placeholder="Search by jobs by job title or keywords" id="search_bar_id"
             oninput="search_bar('search_bar_id')">
         </div>
         <div class="col">
-          <input class="form-control" style="padding: 25px; border:2px solid #7CE689; border-radius:50px;" type="text"
+          <input class="form-control" style="padding: 25px; border-radius:50px; margin-top: 25px;" type="text"
             placeholder="Location" id="location_input" oninput="search_bar('location_input')">
         </div>
       </div>
@@ -71,142 +65,142 @@
   <div id="main_content" style="display: flex; flex-wrap: wrap; justify-content: center;"
     class="justify-content-center fixed">
     <div id="side_bar" style="margin-top:  50px;" class="d-none d-lg-block">
-      <strong>Location:</strong>
+      <div style="color:#c5c6c7;"><strong>Location:</strong></div>
       <div class="form-check form-switch">
 
         <label class="form-check-label text-muted">
           <div id="label_AllLocations"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="all_Locations" checked>All Locations</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="all_Locations" checked><div style="color:#c5c6c7;">All Locations</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Austin"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="austin">Austin</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="austin"><div style="color:#c5c6c7;">Austin</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Chicago"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="chicago">Chicago</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="chicago"><div style="color:#c5c6c7;">Chicago</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Dallas"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="dallas">Dallas</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="dallas"><div style="color:#c5c6c7;">Dallas</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_LosAngeles"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="los_Angeles">Los Angeles</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="los_Angeles"><div style="color:#c5c6c7;">Los Angeles</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Philadelphia"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="philadelphia">Philadelphia</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="philadelphia"><div style="color:#c5c6c7;">Philadelphia</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Remote"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="remote">Remote</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="remote"><div style="color:#c5c6c7;">Remote</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_SaintLouis"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="saint_Louis">Saint Louis</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="saint_Louis"><div style="color:#c5c6c7;">Saint Louis</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_SanFrancisco"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="san_Francisco">San Francisco</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="san_Francisco"><div style="color:#c5c6c7;">San Francisco</div></div>
         </label></input>
       </div>
       <hr style="width: 300px;">
-      <strong>Experience:</strong>
+      <div style="color:#c5c6c7;"><strong>Experience:</strong></div>
       <div class="form-check form-switch">
 
         <label class="form-check-label text-muted">
           <div id="label_Allexperience"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="all_experience_levels" checked>All
-            experience levels</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="all_experience_levels" checked><div style="color:#c5c6c7;">All
+            experience levels</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Internships"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="internships">Internships</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="internships"><div style="color:#c5c6c7;">Internships</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Entry"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="entry">Entry</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="entry"><div style="color:#c5c6c7;">Entry</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Mid"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="mid">Mid
+              style="background-color: #66fcf1; border-color: #1F2833;" id="mid"><div style="color:#c5c6c7;">Mid</div>
           </div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Advanced"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="advanced">Advanced</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="advanced"><div style="color:#c5c6c7;">Advanced</div></div>
         </label></input>
 
         <label class="form-check-label text-muted">
           <div id="label_Executive_SeniorManagement"><input class="form-check-input" type="checkbox"
               onclick="search_filter()" id="executive_Senior_Management"
-              style="background-color: #7CE689; border-color: #7CE689;">Executive/Senior Management</div>
+              style="background-color: #66fcf1; border-color: #1F2833;"><div style="color:#c5c6c7;">Executive/Senior Management</div></div>
         </label></input>
       </div>
       <hr style="width: 300px;">
 
-      <strong>Area of Work:</strong>
+      <div style="color:#c5c6c7;"><strong>Area of Work:</strong></div>
       <div class="form-check form-switch">
 
         <label class="form-check-label text-muted">
           <div id="label_All"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="all" checked>All</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="all" checked><div style="color:#c5c6c7;">All</div></div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Data"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="data">Data
+              style="background-color: #66fcf1; border-color: #1F2833;" id="data"><div style="color:#c5c6c7;">Data</div>
           </div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Software"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="software">Software</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="software"><div style="color:#c5c6c7;">Software</div></div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Sales"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="sales">Sales</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="sales"><div style="color:#c5c6c7;">Sales</div></div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Accounting"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="accounting">Accounting</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="accounting"><div style="color:#c5c6c7;">Accounting</div></div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Advertising"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="advertising">Advertising</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="advertising"><div style="color:#c5c6c7;">Advertising</div></div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_HumanResources"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="human_resources">Human Resources</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="human_resources"><div style="color:#c5c6c7;">Human Resources</div></div>
         </label></input>
 
 
         <label class="form-check-label text-muted">
           <div id="label_Other"><input class="form-check-input" type="checkbox" onclick="search_filter()"
-              style="background-color: #7CE689; border-color: #7CE689;" id="other">Other</div>
+              style="background-color: #66fcf1; border-color: #1F2833;" id="other"><div style="color:#c5c6c7;">Other</div></div>
         </label></input>
       </div>
     </div>
@@ -236,7 +230,7 @@
                 </g>
               </svg>New York</p>
             <a href="/forms/Software-Developer.html"
-              style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107);"
+              style="background-color: #1F2833; border-color: #1F2833;"
               class="btn btn-primary">Apply Now!</a>
           </div>
         </div>
@@ -265,7 +259,7 @@
                   </g>
                 </svg>Austin</p>
               <a href="/forms/Data-Analyst.html"
-                style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)"
+                style="background-color: #1F2833; border-color: #1F2833"
                 class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -294,7 +288,7 @@
                   </g>
                 </svg>Chicago</p>
               <a href="/forms/Support-Technician.html"
-                style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)"
+                style="background-color: #1F2833; border-color: #1F2833"
                 class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -324,7 +318,7 @@
                   </g>
                 </svg>Dallas</p>
               <a href="/forms/Information-Technology-Manager.html"
-                style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)"
+                style="background-color: #1F2833; border-color: #1F2833"
                 class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -353,7 +347,7 @@
                   </g>
                 </svg>Remote</p>
               <a href="/forms/Cybersecurity-Analyst.html"
-                style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)"
+                style="background-color: #1F2833; border-color: #1F2833"
                 class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -383,7 +377,7 @@
                   </g>
                 </svg>Philadelphia</p>
               <a href="/forms/Chief-Executive-Officer.html"
-                style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)"
+                style="background-color: #1F2833; border-color: #1F2833"
                 class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -411,7 +405,7 @@
                     </g>
                   </g>
                 </svg>Los Angeles</p>
-              <a href="/forms/Janitor.html" style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)"
+              <a href="/forms/Janitor.html" style="background-color: #1F2833; border-color: #1F2833"
                 class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -438,7 +432,7 @@
                   </g>
                 </svg>Saint Louis</p>
               <a href="/forms/Project-Manager.html"
-                style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)"
+                style="background-color: #1F2833; border-color: #1F2833"
                 class="btn btn-primary">Apply Now!</a>
             </div>
           </div>
@@ -468,7 +462,7 @@
                   </g>
                 </svg>San Francisco</p>
               <a href="/forms/Market-Research-Analyst.html"
-                style="background-color: rgb(92, 173, 107); border-color: rgb(92, 173, 107)"
+                style="background-color: #1F2833; border-color: #1F2833"
                 class="btn btn-primary">Apply Now!</a>
             </div>
           </div>

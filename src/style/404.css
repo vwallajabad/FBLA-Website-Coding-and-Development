@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(241,209,169);
-    color: #212529;
-  }
+  background-color: #0b0c10;
+  color: #1F2833;
+}
 
- .container {
-   color: black;
-   opacity: 1;
- }
+.container {
+  color: #66fcf1;
+  opacity: 1;
+}
