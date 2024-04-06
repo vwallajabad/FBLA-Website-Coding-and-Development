@@ -15,20 +15,27 @@
 
     <script src='https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js'></script>
     <script src="/script/analytics.js"></script>
+    <script src="/script/navbar.js"></script>
+
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light"
-    style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
-    <a class="navbar-brand" href=“/“>QuantumSphere</a>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+  style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+  <a class="navbar-brand" href=“/“>QuantumSphere</a>
+
+  <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+ </button>
+ 
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+     <div class="navbar-nav">
         <a class="nav-item nav-link" href="/about-us.html">About Us</a>
         <a class="nav-item nav-link" href="/benefits.html">Benefits</a>
         <a class="nav-item nav-link" href="/jobs.html">Jobs</a>
-      </div>
-    </div>
-  </nav>
+     </div>
+  </div>
+</nav>
 
   <svg id="scroll-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1F2833" width="100px"
     height="100px">

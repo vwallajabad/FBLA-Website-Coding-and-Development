@@ -18,6 +18,8 @@ for i in names:
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="/script/navbar.js"></script>
+
     <link rel="stylesheet" href="/style/forms.css">
     <title>QuantumSphere | """ + i.replace('-', ' ') + """</title>
 </head>
@@ -26,6 +28,12 @@ for i in names:
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
         style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
         <a class="navbar-brand" href=“/“>QuantumSphere</a>
+
+        <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="/about-us.html">About Us</a>
@@ -34,6 +42,7 @@ for i in names:
             </div>
         </div>
     </nav>
+
     <form class="custom-form-width" id="application-form">
         <div class="container mt-5">
             <h2 class="text-center mb-4">Apply as a """ + i.replace('-', ' ') + """ for QuantumSphere!</h2><br>
