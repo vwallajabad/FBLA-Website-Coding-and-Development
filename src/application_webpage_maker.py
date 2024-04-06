@@ -27,7 +27,7 @@ for i in names:
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
         style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
-        <a class="navbar-brand" href=“/“>QuantumSphere</a>
+        <a class="navbar-brand" href="/">QuantumSphere</a>
 
         <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
