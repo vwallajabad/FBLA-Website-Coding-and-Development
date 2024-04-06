@@ -1,69 +1,62 @@
 document.getElementById("destroy").remove();
 var additionalText = [
-  "At AgriAI, we're pioneering the future of agriculture through cutting-edge research and innovative AI solutions. ",
+  "At QuantumSphere, we are at the forefront of shaping the future of quantum solutions and quantum computing.",
 
-  "Committed to revolutionizing the farming industry, we harness the power of artificial intelligence to address pressing challenges and optimize agricultural practices nationwide.",
+  "Committed to pioneering innovation in this rapidly evolving field, we leverage cutting-edge research and advanced quantum technologies to drive transformative change across industries.",
 
-  "<br><br>Our multidisciplinary team of experts combines deep-rooted agricultural knowledge with advanced AI techniques to empower farmers with data-driven insights, predictive analytics, and precision farming technologies.",
+  "<br><br>Our team of quantum experts brings together a diverse range of talents, blending deep understanding of quantum principles with expertise in software development, hardware engineering, and computational physics.",
 
-  "From optimizing crop yields and resource utilization to mitigating environmental impacts, we're dedicated to enhancing productivity, sustainability, and resilience across the agricultural landscape.",
+  "With a relentless pursuit of pushing the boundaries of what's possible, we're dedicated to delivering innovative quantum solutions that address complex challenges and unlock new possibilities for our clients.",
 
-  "<br><br>At AgriAI, we envision a world where technology seamlessly integrates with tradition, fostering a thriving and sustainable agricultural ecosystem for generations to come."
+  "<br><br>From quantum computing algorithms to quantum cryptography and quantum sensing technologies, we offer a comprehensive suite of services tailored to meet the unique needs of businesses seeking to harness the power of quantum for competitive advantage.",
+
+  "Whether it's optimizing computational processes, enhancing security protocols, or unlocking insights from massive datasets, QuantumSphere is your trusted partner for navigating the quantum frontier.",
+
+  "<br><br>We envision a future where quantum technology revolutionizes industries, drives scientific discovery, and transforms the way we solve the world's most pressing problems.",
+
+  "Join us on this exciting journey as we continue to push the boundaries of what's possible with quantum computing and quantum solutions.",
 ];
 
 var lastScrollTop = 0;
 var textIndexCounter = 0;
 
 if (window.innerWidth < 768) {
-  var rightDiv = document.querySelector('.right');
+  var rightDiv = document.querySelector(".right");
 
-  for(i = 0; i<additionalText.length; i++){
-    rightDiv.insertAdjacentHTML('beforeend', additionalText[textIndexCounter]);
+  for (i = 0; i < additionalText.length; i++) {
+    rightDiv.insertAdjacentHTML("beforeend", additionalText[textIndexCounter]);
     textIndexCounter++;
   }
 }
 
 function addTextOnScroll(event) {
-var rightDiv = document.querySelector('.right');
-var scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-var scrollHeight = rightDiv.scrollHeight;
-var clientHeight = rightDiv.clientHeight;
+  var rightDiv = document.querySelector(".right");
+  var scrollTop =
+    window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+  var scrollHeight = rightDiv.scrollHeight;
+  var clientHeight = rightDiv.clientHeight;
 
-var scrollDistance = Math.abs(scrollTop - lastScrollTop);
+  var scrollDistance = Math.abs(scrollTop - lastScrollTop);
 
-if (scrollDistance >= 10) {
-if (textIndexCounter < additionalText.length) {
-  rightDiv.insertAdjacentHTML('beforeend', additionalText[textIndexCounter]);
-  textIndexCounter++;
-}
-}
-
-if (scrollTop < lastScrollTop) {
-var paragraphs = rightDiv.querySelectorAll('p');
-if (paragraphs.length > 0) {
-  paragraphs[paragraphs.length - 1].remove();
-  textIndexCounter--;
-}
-}
-
-var totalScrollableHeight = document.body.scrollHeight - window.innerHeight;
-
-if (scrollTop >= totalScrollableHeight - 100) {
-return;
-}
-
-lastScrollTop = scrollTop;
-}
-
-window.addEventListener('scroll', function () {
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  var windowHeight = window.innerHeight;
-  var bodyHeight = document.body.offsetHeight;
-
-  if (scrollPosition + windowHeight >= bodyHeight) {
-    document.getElementById('scroll-arrow').style.opacity = '0';
-  } else {
-    document.getElementById('scroll-arrow').style.opacity = '1';
+  if (scrollDistance >= 10) {
+    if (textIndexCounter < additionalText.length) {
+      rightDiv.insertAdjacentHTML(
+        "beforeend",
+        additionalText[textIndexCounter]
+      );
+      textIndexCounter++;
+    }
+    if (textIndexCounter == additionalText.length) {
+      document.getElementById("scroll-arrow").style.opacity = "0";
+    }
   }
-});
-window.addEventListener('scroll', addTextOnScroll);
+  var totalScrollableHeight = document.body.scrollHeight - window.innerHeight;
+
+  if (scrollTop >= totalScrollableHeight - 100) {
+    return;
+  }
+
+  lastScrollTop = scrollTop;
+}
+
+window.addEventListener("scroll", addTextOnScroll);
