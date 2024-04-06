@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'Quantum';
+  src: url('/style/Quantum_Font.otf') format('opentype');
+}
+ 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Quantum', sans-serif;
   margin: 0;
   padding: 0;
 }

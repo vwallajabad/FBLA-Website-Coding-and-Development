@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Quantum';
+  src: url('/style/Quantum_Font.otf') format('opentype');
+}
+ 
+body {
+  font-family: 'Quantum', sans-serif;
+}
+
 @keyframes pulse {
   0% {
     opacity: 1;

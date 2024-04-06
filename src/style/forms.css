@@ -1,7 +1,12 @@
+@font-face {
+  font-family: 'Quantum';
+  src: url('/style/Quantum_Font.otf') format('opentype');
+}
+ 
 body {
+  font-family: 'Quantum', sans-serif;
   background-image: url("/assets/formBackground.png");
   background-size: cover;
-  font-family: "Arial", sans-serif;
 }
 
 .nav {
@@ -60,3 +65,14 @@ body {
   padding: 20px;
 }
 
+@media (max-width: 1000px) {
+  .custom-form-width {
+    width: 100%;
+  }
+  .custom-form-width h2 {
+    font-size: 60px;
+  }
+  .custom-form-width .mb-3 label {
+    font-size: 40px;
+  }
+}
