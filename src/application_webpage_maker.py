@@ -1,4 +1,8 @@
+names = ["Software-Developer", "Data-Analyst", "Support-Technician", "Information-Technology-Manager", "Cybersecurity-Analyst", "Chief-Executive-Officer", "Janitor", "Project-Manager", "Market-Research-Analyst"]
 
+for i in names:
+    file = open("forms/"+i+".html", "w")
+    file.write("""
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +18,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style/forms.css">
-    <title>QuantumSphere | Chief Executive Officer</title>
+    <title>QuantumSphere | """ + i.replace('-', ' ') + """</title>
 </head>
 
 <body>
@@ -31,7 +35,7 @@
     </nav>
     <form class="custom-form-width" id="application-form">
         <div class="container mt-5">
-            <h2 class="text-center mb-4">Apply as a Chief Executive Officer for QuantumSphere!</h2><br>
+            <h2 class="text-center mb-4">Apply as a """ + i.replace('-', ' ') + """ for QuantumSphere!</h2><br>
             <div class="mb-3">
                 <label for="applicantName" class="form-label">Full Name</label>
                 <input type="text" id="name" required>
@@ -88,7 +92,7 @@
             const phone = form['phone'].value;
             const experience = form['experience'].value;
 
-            db.collection('Chief-Executive-Officer').add({
+            db.collection('""" + i + """').add({
                 name,
                 birthdate,
                 email,
@@ -108,4 +112,4 @@
 
     </div>
 
-</html>
+</html>""")

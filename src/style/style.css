@@ -14,39 +14,38 @@
 }
 
 .shadow {
-  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
+  max-width: 60%;
 }
 
 .job_card {
-  min-width: 300px;
   max-width: 600px;
+  min-width: 300px;
 }
 
 @media (max-width: 600px) {
-  .row{
+  .row {
     margin-left: 0px !important;
   }
-  #cardCol{
+  #cardCol {
     margin-left: 0px !important;
   }
-
 }
 
 #arrow {
-  position: fixed;
   bottom: 0;
+  height: 50px;
   left: 50%;
+  position: fixed;
   transform: translateX(-50%);
   width: 100px;
-  height: 50px;
 }
 
 .sidebar {
-  width: 200px;
-  padding: 20px;
   border-right: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
 }
 
 h2 {
@@ -60,18 +59,18 @@ label {
 
 input,
 select {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
   border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
 }
 
 .noneFound {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#92ccdd, #ffc2cb);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#92ccdd, #ffc2cb);
+  background-clip: text;
+  font-size: 72px;
 }
 
 .job_card {
