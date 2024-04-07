@@ -42,14 +42,13 @@
         <div class="container mt-5">
             <h2 class="text-center mb-4">Apply as a Information Technology Manager for QuantumSphere!</h2><br>
             <div class="mb-3">
-                <label for="applicantName" class="form-label">Full Name</label>
-                <input type="text" id="name" required>
+                <label for="applicantName" class="form-label">First Name</label>
+                <input type="text" id="firstname" required>
             </div>
             <div class="mb-3">
-                <label for="applicantName" class="form-label">Birth Date</label>
-                <div><input type="date" id="birthdate" required></div>
+                <label for="applicantName" class="form-label">Last Name</label>
+                <input type="text" id="lastname" required>
             </div>
-
             <div class="mb-3">
                 <label for="applicantEmail" class="form-label">Email Address</label>
                 <input type="email" id="email" required>
@@ -59,9 +58,9 @@
                 <input type="tel" id="phone" required>
             </div>
             <div class="mb-3">
-                <label for="applicantMessage" class="form-label">Experience</label>
-                <textarea class id="experience" rows="3"
-                    placeholder="Please list your experience in under 1000 characters." required></textarea>
+                <label for="applicantMessage" class="form-label">Educational Background</label>
+                <textarea class id="education" rows="3"
+                    placeholder="Please list your educational background in under 1000 characters." required></textarea>
             </div>
             <div class="mb-3">
                 <label for="applicantMessage" class="form-label">Resume</label>
@@ -92,18 +91,18 @@
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const name = form['name'].value;
-            const birthdate = form['birthdate'].value;
+            const firstname = form['firstname'].value;
+            const lastname = form['lastname'].value;
             const email = form['email'].value;
             const phone = form['phone'].value;
-            const experience = form['experience'].value;
+            const education = form['education'].value;
 
             db.collection('Information-Technology-Manager').add({
-                name,
-                birthdate,
+                firstname,
+                lastname,
                 email,
                 phone,
-                experience,
+                education,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp()
             })
                 .then(() => {

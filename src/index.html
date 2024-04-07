@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumSphere</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/index.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <script src='https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js'></script>
+    <script src="/script/analytics.js"></script>
+    <script src="/script/navbar.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+        style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+        <a class="navbar-brand" href="/">QuantumSphere</a>
+
+        <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/about-us.html">About Us</a>
+                <a class="nav-item nav-link" href="/benefits.html">Benefits</a>
+                <a class="nav-item nav-link" href="/jobs.html">Jobs</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            <h1>QuantumSphere</h1>
+            <p id="quote">
+                Join the future with quantum technology, the next big revolution in the world of computing.
+            </p>
+            <p id="stats">
+                Our company has seen a growth of 500% in the past year, making us the leading provider of quantum
+                solutions.
+            </p>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var quote = document.getElementById("quote");
+            var stats = document.getElementById("stats");
+            setTimeout(function () {
+                quote.style.opacity = 1;
+            }, 1000);
+            setTimeout(function () {
+                stats.style.opacity = 1;
+            }, 2000);
+        };
+    </script>
+</body>
+
+</html>

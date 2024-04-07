@@ -1,0 +1,72 @@
+.nav {
+  width: 100%;
+  z-index: 1000;
+}
+
+@font-face {
+  font-family: "Quantum";
+  src: url("/style/Quantum_Font.otf") format("opentype");
+}
+body {
+  font-family: "Quantum", sans-serif;
+  background-image: url("/assets/landingBackground.PNG");
+  background-size: cover;
+  color: white;
+}
+h1,
+p {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 5rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#quote,
+#stats {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+#quote {
+  animation-delay: 1s;
+}
+
+#stats {
+  animation-delay: 2s;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
