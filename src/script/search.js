@@ -24,6 +24,7 @@ function search_bar(id) {
       if (!existingNoJobsFound) {
         const noJobsFound = document.createElement('h1');
         noJobsFound.textContent = 'No jobs found matching your criteria';
+        noJobsFound.style.color = '#66fcf1';
         noJobsFound.id = 'no_jobs_found';
         noJobsFound.style.display = 'block';
         noJobsFound.style.textAlign = 'center';
@@ -93,6 +94,7 @@ function search_filter() {
     if (!existingNoJobsFound) {
       const noJobsFound = document.createElement('h1');
       noJobsFound.textContent = 'No jobs found matching your criteria';
+      noJobsFound.style.color = '#66fcf1';
       noJobsFound.id = 'no_jobs_found';
       noJobsFound.style.display = 'block';
       noJobsFound.style.textAlign = 'center';
