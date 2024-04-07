@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
@@ -21,24 +22,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"
-        style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
-        <a class="navbar-brand" href=“/“>QuantumSphere</a>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light"
+      style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+      <a class="navbar-brand" href="/">QuantumSphere</a>
 
-        <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/about-us.html">About Us</a>
-                <a class="nav-item nav-link" href="/benefits.html">Benefits</a>
-                <a class="nav-item nav-link" href="/jobs.html">Jobs</a>
-            </div>
-        </div>
-    </nav>
-
+      <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+     
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/about-us.html">About Us</a>
+            <a class="nav-item nav-link" href="/benefits.html">Benefits</a>
+            <a class="nav-item nav-link" href="/jobs.html">Jobs</a>
+         </div>
+      </div>
+   </nav>
     <form class="custom-form-width" id="application-form">
         <div class="container mt-5">
             <h2 class="text-center mb-4">Apply as a Chief Executive Officer for QuantumSphere!</h2><br>
@@ -48,7 +47,7 @@
             </div>
             <div class="mb-3">
                 <label for="applicantName" class="form-label">Birth Date</label>
-                <input type="date" id="birthdate" required>
+                <div><input type="date" id="birthdate" required></div>
             </div>
 
             <div class="mb-3">

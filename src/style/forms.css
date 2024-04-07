@@ -9,11 +9,6 @@ body {
   background-size: cover;
 }
 
-.nav {
-  background-color: white;
-  margin-left: 0px;
-}
-
 .custom-form-width {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -70,9 +65,9 @@ body {
     width: 100%;
   }
   .custom-form-width h2 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .custom-form-width .mb-3 label {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
