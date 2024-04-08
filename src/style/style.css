@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Quantum';
+    src: url('/style/Quantum_Font.otf') format('opentype');
+  }
+   
+  body {
+    font-family: 'Quantum', sans-serif;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .shadow {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+  }
+  
+  .job_card {
+    max-width: 600px;
+    min-width: 300px;
+  }
+  
+  @media (max-width: 600px) {
+    .row {
+      margin-left: 0px !important;
+    }
+    #cardCol {
+      margin-left: 0px !important;
+    }
+  }
+  
+  #arrow {
+    bottom: 0;
+    height: 50px;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    width: 100px;
+  }
+  
+  .sidebar {
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .noneFound {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(#92ccdd, #ffc2cb);
+    background-clip: text;
+    font-size: 72px;
+  }
+  
+  .job_card {
+    margin-bottom: 10px;
+  }
