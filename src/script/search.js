@@ -50,7 +50,7 @@ function search_filter() {
 
   const locationSelects = ["all_Locations", "austin", "chicago", "dallas", "los_Angeles", "philadelphia", "remote", "saint_Louis", "san_Francisco"];
   const experienceSelects = ["all_experience_levels", "internships", "entry", "mid", "advanced", "executive_Senior_Management"];
-  const categorySelects = ["all", "data", "software", "sales", "accounting", "advertising", "human_resources", "other"];
+  const categorySelects = ["all", "data", "software", "sales", "accounting", "advertising", "human_resources"];
 
   locationSelects.forEach((selectId) => {
     if (document.getElementById(selectId).checked && !document.getElementById("all_Locations").checked) {

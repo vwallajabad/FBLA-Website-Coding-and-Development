@@ -1,4 +1,4 @@
-names = ["Software-Developer", "Data-Analyst", "Support-Technician", "Information-Technology-Manager", "Cybersecurity-Analyst", "Chief-Executive-Officer", "Janitor", "Project-Manager", "Market-Research-Analyst"]
+names = ["Software-Developer", "Data-Analyst", "Support-Technician", "Information-Technology-Manager", "Cybersecurity-Analyst", "Chief-Executive-Officer", "SEO-Specialist", "Project-Manager", "Market-Research-Analyst"]
 
 for i in names:
     file = open("forms/"+i+".html", "w")
