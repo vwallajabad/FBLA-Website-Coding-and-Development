@@ -1,16 +1,10 @@
-@keyframes pulse {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@font-face {
+  font-family: 'Quantum';
+  src: url('/style/Quantum_Font.otf') format('opentype');
+}
+
+body {
+  font-family: 'Quantum', sans-serif;
 }
 
 .background-div {
@@ -106,16 +100,15 @@
   background-color: black; /* Adjust color as needed */
 }
 
-/* All review slides css */
-
 /* === Google Font Import - Poppins === */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-family: 'Quantum', sans-serif;
 }
 
 .review {
@@ -145,7 +138,6 @@
   position: absolute;
   height: 40%;
   width: 100%;
-  background: white;
   border-radius: 20px 20px 0 0;
 }
 
