@@ -1,10 +1,19 @@
 @font-face {
-  font-family: 'Quantum';
-  src: url('/style/Quantum_Font.otf') format('opentype');
+  font-family: "Yantramanav";
+  src: url("/style/Quantum_Font.ttf");
 }
- 
+
+@font-face {
+  font-family: "Archivo Black";
+  src: url("/style/header.ttf");
+}
+
+.header_font{
+  font-family: "Archivo Black", sans-serif;
+}
+
 body {
-  font-family: 'Quantum', sans-serif;
+  font-family: "Yantramanav", sans-serif;
   background-color: #0b0c10;
   color: #1f2833;
 }
