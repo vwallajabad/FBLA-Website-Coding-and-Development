@@ -12,6 +12,15 @@
   font-family: "Archivo Black", sans-serif;
 }
 
+.btn-secondary{
+  background-color: rgb(80, 103, 135);
+}
+
+.btn-secondary:hover{
+  color: rgb(80, 103, 135);
+  background-color: white;
+}
+
 body {
   font-family: "Yantramanav", sans-serif;
   background-image: url("/assets/formBackground.png");
