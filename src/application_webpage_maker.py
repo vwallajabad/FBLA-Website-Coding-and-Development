@@ -40,6 +40,7 @@ for i in names:
                 <a class="nav-item nav-link header_font" href="/about-us.html">About Us</a>
                 <a class="nav-item nav-link header_font" href="/benefits.html">Benefits</a>
                 <a class="nav-item nav-link header_font" href="/jobs.html">Jobs</a>
+                <a class="nav-item nav-link header_font" href="/credits.html">Credits</a>
             </div>
         </div>
     </nav>
