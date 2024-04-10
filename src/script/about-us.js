@@ -30,7 +30,7 @@ function addTextOnScroll(event) {
 
 document.getElementById("destroy").remove();
 var additionalText = [
-  "At QuantumSphere, we are at the forefront of shaping the future of quantum solutions and quantum computing.",
+  "At QuantaCore, we are at the forefront of shaping the future of quantum solutions and quantum computing.",
 
   "Committed to pioneering innovation in this rapidly evolving field, we leverage cutting-edge research and advanced quantum technologies to drive transformative change across industries.",
 
@@ -40,7 +40,7 @@ var additionalText = [
 
   "<br><br>From quantum computing algorithms to quantum cryptography and quantum sensing technologies, we offer a comprehensive suite of services tailored to meet the unique needs of businesses seeking to harness the power of quantum for competitive advantage.",
 
-  "Whether it's optimizing computational processes, enhancing security protocols, or unlocking insights from massive datasets, QuantumSphere is your trusted partner for navigating the quantum frontier.",
+  "Whether it's optimizing computational processes, enhancing security protocols, or unlocking insights from massive datasets, QuantaCore is your trusted partner for navigating the quantum frontier.",
 
   "<br><br>We envision a future where quantum technology revolutionizes industries, drives scientific discovery, and transforms the way we solve the world's most pressing problems.",
 

@@ -22,13 +22,13 @@ for i in names:
     <script src="/script/navbar.js"></script>
 
     <link rel="stylesheet" href="/style/forms.css">
-    <title>QuantumSphere | """ + i.replace('-', ' ') + """</title>
+    <title>QuantaCore | """ + i.replace('-', ' ') + """</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
         style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
-        <a class="navbar-brand header_font" href="/">QuantumSphere</a>
+        <a class="navbar-brand header_font" href="/">QuantaCore</a>
 
         <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@ for i in names:
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Your application has been successfully submitted. Thank you for your interest in QuantumSphere!
+                    Your application has been successfully submitted. Thank you for your interest in QuantaCore!
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -65,7 +65,7 @@ for i in names:
 
     <form class="custom-form-width" id="application-form">
         <div class="container mt-5">
-            <h2 class="text-center mb-4 header_font">Apply as a """ + i.replace('-', ' ') + """ for QuantumSphere!</h2>
+            <h2 class="text-center mb-4 header_font">Apply as a """ + i.replace('-', ' ') + """ for QuantaCore!</h2>
             <br>
             <div class="mb-3">
                 <label for="applicantName" class="form-label">First Name</label>
