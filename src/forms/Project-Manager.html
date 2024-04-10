@@ -22,25 +22,47 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light"
-  style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
-  <a class="navbar-brand header_font" href="/">QuantumSphere</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+        style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+        <a class="navbar-brand header_font" href="/">QuantumSphere</a>
 
-  <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
- </button>
- 
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-     <div class="navbar-nav">
-        <a class="nav-item nav-link header_font" href="/about-us.html">About Us</a>
-        <a class="nav-item nav-link header_font" href="/benefits.html">Benefits</a>
-        <a class="nav-item nav-link header_font" href="/jobs.html">Jobs</a>
-     </div>
-  </div>
-</nav>
+        <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link header_font" href="/about-us.html">About Us</a>
+                <a class="nav-item nav-link header_font" href="/benefits.html">Benefits</a>
+                <a class="nav-item nav-link header_font" href="/jobs.html">Jobs</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="submitModalLabel">Application Submitted</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Your application has been successfully submitted. Thank you for your interest in QuantumSphere!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <form class="custom-form-width" id="application-form">
         <div class="container mt-5">
-            <h2 class="text-center mb-4 header_font">Apply as a Project Manager for QuantumSphere!</h2><br>
+            <h2 class="text-center mb-4 header_font">Apply as a Project Manager for QuantumSphere!</h2>
+            <br>
             <div class="mb-3">
                 <label for="applicantName" class="form-label">First Name</label>
                 <input type="text" id="firstname" required>
@@ -108,10 +130,14 @@
                 .then(() => {
                     // Clear the form
                     form.reset();
+                    var myModal = new bootstrap.Modal(document.getElementById('submitModal'), {});
+                    myModal.show();
+
                 })
                 .catch((error) => {
                     console.error("Error adding document: ", error);
                 });
+
         });
     </script>
 
