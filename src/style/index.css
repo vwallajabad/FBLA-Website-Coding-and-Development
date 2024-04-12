@@ -54,7 +54,8 @@ p {
 
 #quote,
 #stats,
-#question {
+#question,
+#question_ {
   animation: fadeIn 2s ease-out forwards;
 }
 
@@ -68,6 +69,10 @@ p {
 
 #question {
   animation-delay: 3s;
+}
+
+#question_ {
+  animation-delay: 4s;
 }
 
 @media (max-width: 768px) {

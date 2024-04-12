@@ -43,13 +43,13 @@
             <p id="quote">
                 Our company has seen a growth of 500% in the past year, placing us at the forefront of the quantum revolution. 
             </p>
-            <p id="">
+            <p id="stats">
                 Work on Quantum computers that solve complex problems faster than classical computers, and quantum sensors with the ability to detect minute changes in the environment with unparalleled precision. Develop Quantum cryptography, as it rises to offer unmatched security. Join us to make our future.
             </p>
-            <p id="stats">
-                Quantum technology isn't just the future – it's the present, and it's reshaping industries, driving innovation, and solving problems once thought impossible. 
-            </p>
             <p id="question">
+                Quantum technology isn't just the future – it's the present, and it's reshaping industries, driving innovation, and solving problems once thought impossible.
+            </p>
+            <p id="question_">
                 Are you ready to be a part of it?
             </p>
         </div>
@@ -59,6 +59,7 @@
             var quote = document.getElementById("quote");
             var stats = document.getElementById("stats");
             var question = document.getElementById("question");
+            var question_ = document.getElementById("question_");
             setTimeout(function () {
                 quote.style.opacity = 1;
             }, 1000);
@@ -68,6 +69,9 @@
             setTimeout(function () {
                 question.style.opacity = 1;
             }, 3000);
+            setTimeout(function () {
+                question_.style.opacity = 1;
+            }, 4000);
         };
     </script>
 </body>
