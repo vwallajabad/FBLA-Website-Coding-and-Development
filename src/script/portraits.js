@@ -9,5 +9,5 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.quierySelectorAll('.portrait-ani');
+const hiddenElements = document.querySelectorAll('.portrait-ani');
 hiddenElements.forEach((el) => observer.observe(el));
