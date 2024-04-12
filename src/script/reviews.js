@@ -11,7 +11,7 @@ if (window.innerWidth < 768) {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: slidesPerView_,
     spaceBetween: 30,
-    slidesPerGroup: slidesPerView_,
+    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {

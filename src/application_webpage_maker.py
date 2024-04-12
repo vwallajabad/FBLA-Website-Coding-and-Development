@@ -28,7 +28,7 @@ for i in names:
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
         style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
-        <a class="navbar-brand header_font" href="/">QuantumSphere</a>
+        <a class="navbar-brand header_font" style="margin-left: 10px;" href="/">QuantumSphere</a>
 
         <button class="navbar-toggler collapsed" type="button" id="navbarToggler" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -37,10 +37,10 @@ for i in names:
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link header_font" href="/about-us.html">About Us</a>
-                <a class="nav-item nav-link header_font" href="/benefits.html">Benefits</a>
-                <a class="nav-item nav-link header_font" href="/jobs.html">Jobs</a>
-                <a class="nav-item nav-link header_font" href="/credits.html">Credits</a>
+                <a class="nav-item nav-link header_font" style="margin-left: 10px;" href="/about-us.html">About Us</a>
+                <a class="nav-item nav-link header_font" style="margin-left: 10px;" href="/benefits.html">Benefits</a>
+                <a class="nav-item nav-link header_font" style="margin-left: 10px;" href="/jobs.html">Jobs</a>
+                <a class="nav-item nav-link header_font" style="margin-left: 10px;" href="/credits.html">Credits</a>
             </div>
         </div>
     </nav>
