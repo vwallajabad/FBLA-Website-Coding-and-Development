@@ -4,6 +4,7 @@ if (window.innerWidth < 768) {
   document.querySelectorAll('.column').forEach(column => {
     column.classList.remove('column');
   });
+  document.getElementById("benefits_text_").style.display = "unset";
   document.getElementById('typewriter_').remove();
   document.getElementById("carouselExampleCaptions").style.width = "100%";
   slidesPerView_ = 1;
@@ -23,3 +24,7 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+
+  

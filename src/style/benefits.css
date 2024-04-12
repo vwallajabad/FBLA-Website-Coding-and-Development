@@ -271,4 +271,10 @@ section .card .image img {
   #arrow {
     display: none;
   }
+  .column{
+    max-width: 100%;
+  }
+  #benefits_text_{
+    color: red;
+  }
 }

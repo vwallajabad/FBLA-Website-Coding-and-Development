@@ -13,3 +13,4 @@ sr.reveal(' .right, right p', {
   viewFactor: 0.2,
   reset: true
 });
+
