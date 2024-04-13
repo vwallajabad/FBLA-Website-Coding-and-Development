@@ -8,7 +8,11 @@
   src: url("/style/header.ttf");
 }
 
-.header_font{
+#top_type {
+  padding-top: 20%;
+}
+
+.header_font {
   font-family: "Archivo Black", sans-serif;
 }
 
@@ -271,10 +275,25 @@ section .card .image img {
   #arrow {
     display: none;
   }
-  .column{
+  .column {
     max-width: 100%;
   }
-  #benefits_text_{
-    color: red;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  #top_type {
+    padding-top: 0;
+  }
+  #typewriter {
+    padding-bottom: 35px;
+  }
+  #carousel_ {
+    height: 100%;
+  }
+  #carouselExampleCaptions {
+    padding-top: 45px;
+  }
+  #pto{
+    padding-top: 65px;
   }
 }
