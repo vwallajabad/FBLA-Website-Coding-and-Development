@@ -111,54 +111,36 @@
         const db = firebase.firestore();
 
         const form = document.getElementById('application-form');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
 
-  const firstname = form['firstname'].value;
-  const lastname = form['lastname'].value;
-  const email = form['email'].value;
-  const phone = form['phone'].value;
-  const education = form['education'].value;
-  const resume = form['resume'].files[0];
+            const firstname = form['firstname'].value;
+            const lastname = form['lastname'].value;
+            const email = form['email'].value;
+            const phone = form['phone'].value;
+            const education = form['education'].value;
 
-  // Upload the resume file to Firebase Storage
-  const storageRef = firebase.storage().ref();
-  const resumeRef = storageRef.child(`resumes/${firstname}_${lastname}`);
-  const uploadTask = resumeRef.put(resume);
+            db.collection('Chief-Executive-Officer').add({
+                firstname,
+                lastname,
+                email,
+                phone,
+                education,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            })
+                .then(() => {
+                    // Clear the form
+                    form.reset();
+                    var myModal = new bootstrap.Modal(document.getElementById('submitModal'), {});
+                    myModal.show();
 
-  uploadTask.on(
-    firebase.storage.TaskEvent.STATE_CHANGED,
-    (snapshot) => {
-      // Handle progress, errors, and completion
-    },
-    (error) => {
-      console.error("Error uploading resume: ", error);
-    },
-    () => {
-      // Get the download URL for the uploaded file
-      uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
-        db.collection('Chief-Executive-Officer').add({
-          firstname,
-          lastname,
-          email,
-          phone,
-          education,
-          resume: downloadURL,
-          timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        })
-       .then(() => {
-          // Clear the form
-          form.reset();
-          var myModal = new bootstrap.Modal(document.getElementById('submitModal'), {});
-          myModal.show();
-        })
-       .catch((error) => {
-          console.error("Error adding document: ", error);
+                })
+                .catch((error) => {
+                    console.error("Error adding document: ", error);
+                });
+
         });
-      });
-    }
-  );
-});    </script>
+    </script>
 
     </div>
 
