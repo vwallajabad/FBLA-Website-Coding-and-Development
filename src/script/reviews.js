@@ -1,3 +1,9 @@
+if(window.innerWidth < 1000){
+  //remove class
+  document.getElementById("back_image").classList.remove("background-div");
+  document.getElementById("about_txt").style.paddingTop = "20%";
+}
+
 var slidesPerView_ = 3;
 if (window.innerWidth < 768) {
 
